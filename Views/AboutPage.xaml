@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:Notes.Models"
+             x:Class="Notes.Views.AboutPage">
+    <ContentPage.BindingContext>
+        <models:About />
+    </ContentPage.BindingContext>
+    <VerticalStackLayout Spacing="10" Margin="10">
+        <HorizontalStackLayout Spacing="10">
+            <Image Source="imagenpro.jpg"
+                   SemanticProperties.Description="The dot net bot waving hello!"
+                   HeightRequest="64" />
+            <Label FontSize="22" FontAttributes="Bold" Text="Nombre:" VerticalOptions="End" />
+            <Label FontSize="22" Text="Mauricio Olivo" VerticalOptions="End" />
+        </HorizontalStackLayout>
+
+        <Label Text="Soy un estudiante de Ing. Software, mis hoobies son salir con mis amigos, conocer nuevos lugares y viajar" />
+        <Button Text="GRACIAS" Clicked="LearnMore_Clicked" />
+    </VerticalStackLayout>
+
+</ContentPage>
